@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohana Prakash G - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="animated-bg"></div>
+    <button id="dark-mode-toggle">Toggle Dark Mode</button>
+    <header>
+        <h1 class="fade-in">Mohana Prakash G</h1>
+        <p class="fade-in subtitle">Web Development & Data Science Enthusiast</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about" class="section slide-in">
+        <h2>About Me</h2>
+        <p>I'm a Passionate Computer Science Student with a keen interest in Web Development and Data Science. I have good Knowledge in programming, AI, and open-source contributions.</p>
+    </section>
+    
+    <section id="skills" class="section slide-in">
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming Languages: C, Python, Java (Basics)</li>
+            <li>Frameworks & Libraries: HTML, CSS, JavaScript, Pandas, Matplotlib</li>
+            <li>Tools & Platforms: VS Code, PyCharm, Canva</li>
+            <li>Databases: SQL</li>
+        </ul>
+    </section>
+    
+    <section id="projects" class="section slide-in">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>2D Car Racing Game:</strong> Developed a Python-based 2D racing game with collision detection and scoring system. <a href="https://github.com/Mohan-IGN/Traffic-Racer-2D">GitHub Link</a></li>
+            <li><strong>AI Weather Prediction:</strong> Built an AI model for weather forecasting using machine learning techniques. </li>
+        </ul>
+    </section>
+    
+    <section id="experience" class="section slide-in">
+        <h2>Experience</h2>
+        <ul>
+            <li><strong>Forage - Data Analytics & Visualization:</strong> Completed a virtual internship focused on data manipulation and visualization.</li>
+            <li><strong>Forage - AI Job Simulation:</strong> Gained insights into AI problem-solving and decision-making.</li>
+        </ul>
+    </section>
+    
+    <section id="certifications" class="section slide-in">
+        <h2>Certifications & Achievements</h2>
+        <ul>
+            <li>Introduction to Ethical Hacking - The Great Learning Academy</li>
+            <li>Basic UI/UX - The Great Learning Academy</li>
+            <li>Unlocking the Power of JavaScript - SCALER</li>
+            <li>Published Research Paper: Obstacle Detection in Railways Using IoT - IJCRT</li>
+        </ul>
+    </section>
+    
+    <section id="contact" class="section slide-in">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:mohanprakash226@gmail.com">mohanprakash226@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/mohana-prakash-571a3b274">Profile</a></p>
+        <p>GitHub: <a href="https://github.com/Mohan-IGN">Mohan-IGN</a></p>
+        <p>LeetCode: <a href="https://leetcode.com/u/mohanaprakash226/">Profile</a></p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Mohana Prakash G. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        $(document).ready(function(){
+            $(".fade-in").hide().fadeIn(2000);
+            $(".slide-in").css("opacity", "0").each(function(index) {
+                $(this).delay(500 * index).animate({ opacity: 1, marginLeft: "0px" }, 1000);
+            });
+        });
+
+        // Dark Mode Toggle
+        document.getElementById("dark-mode-toggle").addEventListener("click", function() {
+            document.body.classList.toggle("dark-mode");
+        });
+    </script>
+</body>
+</html>
